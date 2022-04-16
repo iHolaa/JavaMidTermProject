@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.SignUp">
+   <right>
+      <Pane prefHeight="600.0" prefWidth="440.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="signupPassLabel" layoutX="94.0" layoutY="335.0" prefHeight="24.0" prefWidth="284.0" textFill="#eb0808" />
+            <Button layoutX="148.0" layoutY="374.0" mnemonicParsing="false" onAction="#SignUpButton" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: #8BE21B;" text="Sign Up">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Text fill="#e80b0b" fontSmoothingType="LCD" layoutX="302.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Written by Erfan">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#2e16ff" layoutX="86.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Bank Application">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="65.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="62.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="signupPassTextField" layoutX="171.0" layoutY="278.0" prefHeight="40.0" prefWidth="180.0" promptText="password" />
+            <TextField fx:id="signupUsrTextField" layoutX="171.0" layoutY="219.0" prefHeight="40.0" prefWidth="180.0" promptText="username" />
+         </children>
+      </Pane>
+   </right>
+   <left>
+      <ImageView fitHeight="606.0" fitWidth="377.0" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="file:/D:/JavaBank/Main/Photos/BankPic.jpg" />
+         </image>
+      </ImageView>
+   </left>
+</BorderPane>
