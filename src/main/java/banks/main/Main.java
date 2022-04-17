@@ -19,7 +19,7 @@ public class Main extends Application {
         stage.setResizable(false);
         Parent root = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
         Scene scene0 = new Scene(root, 800, 600);
-        stage.setTitle("Java Program");
+        stage.setTitle("Java Bank Project");
         stage.setScene(scene0);
         stage.show();
     }
