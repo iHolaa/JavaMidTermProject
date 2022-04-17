@@ -19,10 +19,18 @@ public class AddAdmin {
         }
     }
     public void AdminForBank2(){
-
+        try {
+            main.changeScene("AddAdminForBank2.fxml");
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
     public void AdminForBank3(){
-
+        try {
+            main.changeScene("AddAdminForBank3.fxml");
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
     public void ReturnToMenu(){
         try {

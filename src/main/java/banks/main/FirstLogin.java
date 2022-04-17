@@ -25,7 +25,7 @@ public class FirstLogin {
         ArrayList<String> pass = new ArrayList<>();
         fm.FileReader("D:\\JavaBank\\Main\\Files\\SignUp\\Username.txt", usr);
         for (int i = 0; i < usr.size(); i++) {
-            if (loginUsrTextField.getText().equals(usr.get(i))) {
+            if (loginUsrTextField.getText() != null && loginUsrTextField.getText().equals(usr.get(i))) {
                 fm.FileReader("D:\\JavaBank\\Main\\Files\\SignUp\\Password.txt", pass);
                 for (int j = 0; j < pass.size(); j++) {
                     if (loginPassTextField.getText().equals(pass.get(j))) {
@@ -37,8 +37,11 @@ public class FirstLogin {
                     }
                 }
             } else {
-                loginLabel.setText("Username Or Password is WRONG ...");
+                loginLabel.setVisible(true);
+                loginLabel.setText(" Username or Password is WRONG ");
             }
         }
+        loginLabel.setVisible(true);
+        loginLabel.setText(" Username or Password is WRONG ");
     }
 }

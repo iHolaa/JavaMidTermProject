@@ -5,25 +5,25 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class AddAdminForBank1 {
+public class AddAdminForBank3 {
     Main main = new Main();
     FileManeger2 fm2 = new FileManeger2();
-@FXML
-TextField adminUsername;
-@FXML
-PasswordField adminPassword;
-@FXML
-Label label;
+    @FXML
+    TextField adminUsername;
+    @FXML
+    PasswordField adminPassword;
+    @FXML
+    Label label;
 
 
-    public void AddAdminForBank1(){
+    public void AddAdminForBank3(){
         if(adminPassword.getText().length() > 3 && adminUsername.getText().length() > 3){
-            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\Bank1 Admin SignUp\\Username.txt",
+            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\Bank3 Admin SignUp\\Username.txt",
                     adminUsername.getText().trim());
-            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\Bank1 Admin SignUp\\Password.txt",
+            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\Bank3 Admin SignUp\\Password.txt",
                     adminPassword.getText().trim());
             label.setVisible(true);
-            label.setText("  Bank1 Admin -->> Added Successfully.. ");
+            label.setText("  Bank3 Admin -->> Added Successfully.. ");
         }
         else{
             label.setVisible(true);

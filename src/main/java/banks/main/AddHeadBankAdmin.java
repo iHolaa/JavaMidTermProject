@@ -23,14 +23,16 @@ try {
     }
     public void AddAdminForHeadBank(){
         if(adminPassword.getText().length() > 3 && adminUsername.getText().length() > 3){
-            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\HeadBank Addmin SignUp\\Username.txt",
+            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\HeadBank Admin SignUp\\Username.txt",
                     adminUsername.getText().trim());
-            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\HeadBank Addmin SignUp\\Password.txt",
+            fm2.FileWriter("D:\\JavaBank\\Main\\Files\\HeadBank Admin SignUp\\Password.txt",
                     adminPassword.getText().trim());
-            label.setText("Admin Added ..");
+            label.setVisible(true);
+            label.setText("  HeadBank Admin -->> Added Successfully.. ");
         }
         else{
-            label.setText("Password & Username Must be more than 3 character");
+            label.setVisible(true);
+            label.setText("  Username & Password Must be At least 4 Character ");
         }
     }
 

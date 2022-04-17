@@ -18,7 +18,7 @@
          <children>
             <ImageView fitHeight="612.0" fitWidth="815.0" layoutX="-7.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../../../../Photos/Bank1.jpg" />
+                  <Image url="file:/D:/JavaBank/Main/Photos/Bank1.jpg" />
                </image>
             </ImageView>
             <Text layoutX="32.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Define Admin For Bank1">
@@ -48,9 +48,9 @@
                   <Font name="System Bold" size="17.0" />
                </font>
             </Button>
-            <Label fx:id="label" layoutX="212.0" layoutY="319.0" prefHeight="30.0" prefWidth="452.0" textFill="#ff2701">
+            <Label fx:id="label" layoutX="212.0" layoutY="319.0" prefHeight="30.0" prefWidth="363.0" style="-fx-background-color: white;" textFill="#ff2701" visible="false">
                <font>
-                  <Font name="System Bold" size="20.0" />
+                  <Font size="15.0" />
                </font>
             </Label>
          </children>

@@ -21,13 +21,13 @@ public void SignUpButton(){
     Main main = new Main();
 
     try {
-        if(signupPassTextField.getText().toString().length() >  6 ) {
+        if(signupPassTextField.getText().length() >=  4 && signupUsrTextField.getText().length() >=4 ) {
             fm.FileWriter("D:\\JavaBank\\Main\\Files\\SignUp\\Password.txt", signupPassTextField.getText().trim());
             fm.FileWriter("D:\\JavaBank\\Main\\Files\\SignUp\\Username.txt", signupUsrTextField.getText().trim());
             main.changeScene("Login.fxml");
         }
         else {
-            signupPassLabel.setText("Password Must be More than 6 Character");
+            signupPassLabel.setText(" Username & Password Must be At least 4 Character ");
         }
     } catch (IOException e) {
         throw new RuntimeException(e);
