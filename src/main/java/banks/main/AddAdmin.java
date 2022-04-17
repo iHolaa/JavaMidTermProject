@@ -12,7 +12,11 @@ public class AddAdmin {
         }
     }
     public void AdminForBank1(){
-
+        try {
+            main.changeScene("AddAdminForBank1.fxml");
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
     public void AdminForBank2(){
 
