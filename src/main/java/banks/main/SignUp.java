@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 
 public class SignUp {
+    Main main = new Main();
     FileManeger fm = new FileManeger();
 @FXML
 Label signupPassLabel;
@@ -28,6 +29,13 @@ public void SignUpButton(){
         else {
             signupPassLabel.setText("Password Must be More than 6 Character");
         }
+    } catch (IOException e) {
+        throw new RuntimeException(e);
+    }
+}
+public void GotoLogin(){
+    try {
+        main.changeScene("Login.fxml");
     } catch (IOException e) {
         throw new RuntimeException(e);
     }
