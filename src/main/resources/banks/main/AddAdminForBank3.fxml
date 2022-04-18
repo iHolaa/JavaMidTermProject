@@ -18,7 +18,7 @@
          <children>
             <ImageView fitHeight="631.0" fitWidth="930.0" layoutX="-50.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:/D:/JavaBank/Main/Photos/Bank3.jpg" />
+                  <Image url="@/Bank3.jpg" />
                </image>
             </ImageView>
             <Label layoutX="210.0" layoutY="223.0" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: yellow;" text="  Admin Username" textAlignment="CENTER">

@@ -18,7 +18,7 @@
          <children>
             <ImageView fitHeight="612.0" fitWidth="815.0" layoutX="-7.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="file:/D:/JavaBank/Main/Photos/Bank1.jpg" />
+                  <Image url="@/Bank1.jpg" />
                </image>
             </ImageView>
             <Text layoutX="32.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Define Admin For Bank1">

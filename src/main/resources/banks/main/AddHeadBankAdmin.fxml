@@ -17,7 +17,7 @@
          <children>
             <ImageView fitHeight="607.0" fitWidth="808.0" layoutX="3.0" layoutY="4.0">
                <image>
-                  <Image url="file:/D:/JavaBank/Main/Photos/Bank_of_China_Headquarter,_Beijing.jpg" />
+                  <Image url="@/HeadBank.jpg" />
                </image>
             </ImageView>
             <Text layoutX="28.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Define Admin For Head Bank">

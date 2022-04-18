@@ -14,13 +14,14 @@ TextField adminUsername;
 Label label;
 Main main = new Main();
 FileManeger2 fm2 = new FileManeger2();
-    public void ReturnToMenu(){
-try {
-    main.changeScene("Menu.fxml");
-}catch (Exception ex){
-    ex.printStackTrace();
-}
+    public void ReturnToMenu() {
+        try {
+            main.changeScene("Menu.fxml");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
+
     public void AddAdminForHeadBank(){
         if(adminPassword.getText().length() > 3 && adminUsername.getText().length() > 3){
             fm2.FileWriter("D:\\JavaBank\\Main\\Files\\HeadBank Admin SignUp\\Username.txt",

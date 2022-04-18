@@ -11,4 +11,11 @@ public class Menu {
            throw new RuntimeException(e);
        }
    }
+   public void MenuAdminPage(){
+       try {
+           main.changeScene("LoginAdmin.fxml");
+       } catch (IOException e) {
+           throw new RuntimeException(e);
+       }
+   }
 }
