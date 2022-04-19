@@ -24,7 +24,7 @@ public class FirstLogin {
         ArrayList<String> usr = new ArrayList<>();
         ArrayList<String> pass = new ArrayList<>();
         fm.FileReader("D:\\JavaBank\\Main\\Files\\SignUp\\Username.txt", usr);
-        for (int i = 0; i < usr.size(); i++) {
+        for (int i = 0; i < usr.size() ; i++) {
             if (loginUsrTextField.getText() != null && loginUsrTextField.getText().equals(usr.get(i))) {
                 fm.FileReader("D:\\JavaBank\\Main\\Files\\SignUp\\Password.txt", pass);
                 for (int j = 0; j < pass.size(); j++) {
