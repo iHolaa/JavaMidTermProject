@@ -30,7 +30,7 @@ public class FirstLogin {
                 for (int j = 0; j < pass.size(); j++) {
                     if (loginPassTextField.getText().equals(pass.get(j))) {
                         try {
-                            main.changeScene("Menu.fxml");
+                            main.changeScene("EnterTheBank.fxml");
                         } catch (IOException e) {
                             throw new RuntimeException(e);
                         }
