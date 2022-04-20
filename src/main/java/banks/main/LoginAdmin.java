@@ -56,7 +56,11 @@ public class LoginAdmin {
 
             if (HeadBankCheckBox.isSelected() && loginUsrTextField.getText().trim().equals(HeadBankUsr.get(i)) &&
                     loginPassTextField.getText().trim().equals(HeadBankPass.get(i))){
-
+                try{
+                    main.changeScene("HeadBank.fxml");
+                }catch(Exception ex){
+                    ex.printStackTrace();
+                }
             }
             else if (Bank1CheckBox.isSelected() && loginUsrTextField.getText().trim().equals(Bank1Usr.get(i)) &&
                     loginPassTextField.getText().trim().equals(Bank1Pass.get(i))) {

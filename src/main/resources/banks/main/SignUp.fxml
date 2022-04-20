@@ -54,7 +54,7 @@
    <left>
       <ImageView fitHeight="606.0" fitWidth="377.0" BorderPane.alignment="CENTER">
          <image>
-            <Image url="@/BankPic.jpg" />
+            <Image url="@../../Photos/BankPic.jpg" />
          </image>
       </ImageView>
    </left>

@@ -18,7 +18,7 @@
          <children>
             <ImageView fitHeight="228.0" fitWidth="248.0" layoutX="286.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@/admin-login-2.jpg" />
+                  <Image url="@../../Photos/admin-login-2.jpg" />
                </image>
             </ImageView>
             <TextField fx:id="loginUsrTextField" layoutX="270.0" layoutY="264.0" prefHeight="56.0" prefWidth="261.0" promptText="username">

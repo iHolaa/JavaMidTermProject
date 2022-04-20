@@ -11,14 +11,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.AddAdminForBank2">
    <children>
       <Pane layoutX="-7.0" layoutY="-3.0" prefHeight="600.0" prefWidth="800.0">
          <children>
             <ImageView fitHeight="612.0" fitWidth="816.0" layoutX="-6.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@/Bank2.jpg" />
+                  <Image url="@../../Photos/Bank2.jpg" />
                </image>
             </ImageView>
             <Label layoutX="200.0" layoutY="213.0" prefHeight="39.0" prefWidth="188.0" style="-fx-background-color: yellow;" text="  Admin Username" textAlignment="CENTER">

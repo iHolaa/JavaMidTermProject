@@ -14,7 +14,7 @@
          <children>
             <ImageView fitHeight="610.0" fitWidth="810.0" layoutX="-5.0">
                <image>
-                  <Image url="@/Menu.jpg" />
+                  <Image url="@../../Photos/Menu.jpg" />
                </image>
             </ImageView>
             <Text fill="WHITE" layoutX="74.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu">

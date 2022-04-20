@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.HeadBank">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="613.0" fitWidth="814.0" layoutX="-8.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Photos/HeadBank.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="302.0" layoutY="222.0" mnemonicParsing="false" onAction="#HeadBankUserInformation" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #171A3C;" text="Users &amp; Information" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="301.0" layoutY="284.0" mnemonicParsing="false" onAction="#UserRequestButton" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #171A3C;" text="User Request" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="665.0" layoutY="538.0" mnemonicParsing="false" onAction="#ReturnToMenu" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #F6E925;" text="Return to Menu">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Text layoutX="22.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HeadBank" textAlignment="CENTER" wrappingWidth="139.17784070968628">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -11,14 +11,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.AddUser">
    <children>
       <Pane layoutX="-1.0" layoutY="-4.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #F8F7F6;">
          <children>
             <ImageView fitHeight="342.0" fitWidth="233.0" layoutX="567.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@/UserAdd.png" />
+                  <Image url="@../../Photos/UserAdd.png" />
                </image>
             </ImageView>
             <Text fill="#612828" layoutX="10.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Information Form" textAlignment="CENTER" wrappingWidth="188.00000404939055">
@@ -26,7 +25,7 @@
                   <Font size="13.0" />
                </font>
             </Text>
-            <TextField fx:id="UserNameTextField" layoutX="299.0" layoutY="172.0" prefHeight="36.0" prefWidth="164.0" />
+            <TextField fx:id="UserNameTextField" layoutX="299.0" layoutY="172.0" prefHeight="36.0" prefWidth="209.0" />
             <Text layoutX="214.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name : ">
                <font>
                   <Font size="19.0" />
@@ -37,7 +36,7 @@
                   <Font size="20.0" />
                </font>
             </Text>
-            <TextField fx:id="UserLastnameTextField" layoutX="299.0" layoutY="208.0" prefHeight="36.0" prefWidth="164.0" />
+            <TextField fx:id="UserLastnameTextField" layoutX="299.0" layoutY="208.0" prefHeight="36.0" prefWidth="209.0" />
             <Text layoutX="183.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lastname : ">
                <font>
                   <Font size="19.0" />
@@ -49,38 +48,38 @@
                </font>
             </Text>
             <TextField fx:id="UserAgeTextField" layoutX="299.0" layoutY="246.0" prefHeight="36.0" prefWidth="55.0" />
-            <Text layoutX="234.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job :">
+            <Text layoutX="183.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : ">
                <font>
                   <Font size="19.0" />
                </font>
             </Text>
-            <TextField fx:id="UserJobTextField" layoutX="300.0" layoutY="282.0" prefHeight="36.0" prefWidth="146.0" />
-            <Text layoutX="127.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination bank">
+            <TextField fx:id="UserPasswordTextField" layoutX="300.0" layoutY="282.0" prefHeight="36.0" prefWidth="209.0" />
+            <Text layoutX="120.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination Bank account :">
                <font>
-                  <Font size="19.0" />
+                  <Font size="17.0" />
                </font>
             </Text>
-            <CheckBox fx:id="HeadBankCheckBox" layoutX="300.0" layoutY="342.0" mnemonicParsing="false" onAction="#Change" selected="true" text="HeadBank" textFill="#0d0d0d">
+            <CheckBox fx:id="HeadBankCheckBox" layoutX="361.0" layoutY="343.0" mnemonicParsing="false" onAction="#Change" selected="true" text="HeadBank" textFill="#0d0d0d">
                <font>
                   <Font size="17.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="Bank1CheckBox" layoutX="299.0" layoutY="369.0" mnemonicParsing="false" onAction="#Change1" text="Bank1" textFill="#4700f5">
+            <CheckBox fx:id="Bank1CheckBox" layoutX="361.0" layoutY="369.0" mnemonicParsing="false" onAction="#Change1" text="Bank1" textFill="#4700f5">
                <font>
                   <Font size="17.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="Bank2CheckBox" layoutX="299.0" layoutY="395.0" mnemonicParsing="false" onAction="#Change2" text="Bank2" textFill="#7b00f5">
+            <CheckBox fx:id="Bank2CheckBox" layoutX="361.0" layoutY="395.0" mnemonicParsing="false" onAction="#Change2" text="Bank2" textFill="#7b00f5">
                <font>
                   <Font size="17.0" />
                </font>
             </CheckBox>
-            <CheckBox fx:id="Bank3CheckBox" layoutX="299.0" layoutY="421.0" mnemonicParsing="false" onAction="#Change3" text="Bank3" textFill="#7b00f5">
+            <CheckBox fx:id="Bank3CheckBox" layoutX="361.0" layoutY="421.0" mnemonicParsing="false" onAction="#Change3" text="Bank3" textFill="#7b00f5">
                <font>
                   <Font size="17.0" />
                </font>
             </CheckBox>
-            <Button layoutX="256.0" layoutY="490.0" mnemonicParsing="false" onAction="#UserSendInformation" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #289541;" text="Send Information" textFill="WHITE">
+            <Button layoutX="283.0" layoutY="490.0" mnemonicParsing="false" onAction="#UserSendInformation" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #289541;" text="Send Information" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
@@ -90,13 +89,16 @@
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="256.0" layoutY="536.0" mnemonicParsing="false" onAction="#UserCLearButton" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #FB9D40;" text="Clear" textFill="#402d2d">
+            <Button layoutX="283.0" layoutY="539.0" mnemonicParsing="false" onAction="#UserCLearButton" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #FB9D40;" text="Clear" textFill="#402d2d">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Label fx:id="FieldsEmptyLabel" layoutX="220.0" layoutY="452.0" prefHeight="17.0" prefWidth="202.0" textFill="RED" visible="false" />
-            <Label fx:id="SendLabel" layoutX="220.0" layoutY="469.0" prefHeight="17.0" prefWidth="202.0" textFill="#109a35" visible="false" />
+            <Label fx:id="ErrorLabel" layoutX="230.0" layoutY="439.0" prefHeight="20.0" prefWidth="104.0" textAlignment="CENTER" textFill="RED" />
+            <Label fx:id="SendLabel" layoutX="227.0" layoutY="464.0" prefHeight="17.0" prefWidth="269.0" textAlignment="CENTER" textFill="#109a35">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
          </children>
       </Pane>
    </children>
