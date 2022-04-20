@@ -22,8 +22,8 @@ public void SignUpButton(){
 
     try {
         if(signupPassTextField.getText().length() >=  4 && signupUsrTextField.getText().length() >=4 ) {
-            fm.FileWriter("D:\\JavaBank\\Main\\Files\\SignUp\\Password.txt", signupPassTextField.getText().trim());
-            fm.FileWriter("D:\\JavaBank\\Main\\Files\\SignUp\\Username.txt", signupUsrTextField.getText().trim());
+            fm.FileWriter("src\\main\\resources\\Files\\SignUp\\Password.txt", signupPassTextField.getText().trim());
+            fm.FileWriter("src\\main\\resources\\Files\\SignUp\\Username.txt", signupUsrTextField.getText().trim());
             main.changeScene("Login.fxml");
         }
         else {

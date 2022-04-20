@@ -6,6 +6,15 @@ public class Menu {
     Main main = new Main();
 
 
+
+    public void addBankButton(){
+        try {
+            main.changeScene("AddBank.fxml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
    public void addAdminButton(){
        try {
            main.changeScene("AddAdmin.fxml");

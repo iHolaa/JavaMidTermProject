@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.AddBank">
+   <children>
+      <Pane layoutY="-5.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="613.0" fitWidth="814.0" layoutX="-8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Photos/HeadBank.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="27.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HeadBank" textAlignment="CENTER" wrappingWidth="121.13671875">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Button layoutX="668.0" layoutY="546.0" mnemonicParsing="false" onAction="#ReturnToMenu" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #F6E925;" text="Return to Menu">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Pane layoutX="113.0" layoutY="88.0" prefHeight="72.0" prefWidth="569.0" style="-fx-background-color: black;">
+               <children>
+                  <CheckBox fx:id="Bank1CheckBox" layoutX="38.0" layoutY="14.0" mnemonicParsing="false" onAction="#Change1" prefHeight="53.0" prefWidth="121.0" selected="true" text="Bank1" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Bank3CheckBox" layoutX="418.0" layoutY="23.0" mnemonicParsing="false" onAction="#Change3" text="Bank3" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="Bank2CheckBox" layoutX="231.0" layoutY="23.0" mnemonicParsing="false" onAction="#Change2" text="Bank2" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+            <Pane layoutX="112.0" layoutY="160.0" prefHeight="349.0" prefWidth="569.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="37.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank budget : ">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="bankBudgetTextField" layoutX="169.0" layoutY="62.0" prefHeight="53.0" prefWidth="231.0" promptText=" $ Dollar">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </TextField>
+                  <CheckBox fx:id="shabaCheckBox" layoutX="52.0" layoutY="141.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="131.0" text="Shaba">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <Button layoutX="206.0" layoutY="262.0" mnemonicParsing="false" onAction="#AddBankButton" prefHeight="53.0" prefWidth="158.0" style="-fx-background-color: #49A93C#49A93C;" text="Add Bank">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="label2" layoutX="88.0" layoutY="226.0" prefHeight="28.0" prefWidth="410.0" textFill="#1a6f4a">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label1" layoutX="88.0" layoutY="198.0" prefHeight="28.0" prefWidth="410.0" textFill="RED">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

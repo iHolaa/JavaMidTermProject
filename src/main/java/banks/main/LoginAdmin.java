@@ -40,17 +40,17 @@ public class LoginAdmin {
 
     public void LoginButton() throws IOException {
         //HeadBank
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\HeadBank Admin SignUp\\Username.txt", HeadBankUsr);
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\HeadBank Admin SignUp\\Password.txt", HeadBankPass);
+        fm.FileReader("src\\main\\resources\\Files\\HeadBank Admin SignUp\\Username.txt", HeadBankUsr);
+        fm.FileReader("src\\main\\resources\\Files\\HeadBank Admin SignUp\\Password.txt", HeadBankPass);
         //Bank1
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\Bank1 Admin SignUp\\Username.txt", Bank1Usr);
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\Bank1 Admin SignUp\\Password.txt", Bank1Pass);
+        fm.FileReader("src\\main\\resources\\Files\\Bank1 Admin SignUp\\Username.txt", Bank1Usr);
+        fm.FileReader("src\\main\\resources\\Files\\Bank1 Admin SignUp\\Password.txt", Bank1Pass);
         //Bank2
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\Bank2 Admin SignUp\\Username.txt", Bank2Usr);
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\Bank2 Admin SignUp\\Password.txt", Bank2Pass);
+        fm.FileReader("src\\main\\resources\\Files\\Bank2 Admin SignUp\\Username.txt", Bank2Usr);
+        fm.FileReader("src\\main\\resources\\Files\\Bank2 Admin SignUp\\Password.txt", Bank2Pass);
         //Bank3
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\Bank3 Admin SignUp\\Username.txt",Bank3Usr);
-        fm.FileReader("D:\\JavaBank\\Main\\Files\\Bank3 Admin SignUp\\Password.txt", Bank3Pass);
+        fm.FileReader("src\\main\\resources\\Files\\Bank3 Admin SignUp\\Username.txt",Bank3Usr);
+        fm.FileReader("src\\main\\resources\\Files\\Bank3 Admin SignUp\\Password.txt", Bank3Pass);
 
         for (int i = 0; i < HeadBankUsr.size() ; i++) {
 
