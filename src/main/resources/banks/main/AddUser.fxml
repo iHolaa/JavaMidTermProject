@@ -94,11 +94,17 @@
                   <Font size="13.0" />
                </font>
             </Button>
-            <Label fx:id="ErrorLabel" layoutX="230.0" layoutY="439.0" prefHeight="20.0" prefWidth="104.0" textAlignment="CENTER" textFill="RED" />
+            <Label fx:id="ErrorLabel" layoutX="65.0" layoutY="439.0" prefHeight="20.0" prefWidth="269.0" textAlignment="CENTER" textFill="RED" />
             <Label fx:id="SendLabel" layoutX="227.0" layoutY="464.0" prefHeight="17.0" prefWidth="269.0" textAlignment="CENTER" textFill="#109a35">
                <font>
                   <Font size="14.0" />
                </font></Label>
+            <TextField fx:id="UserCreditTextField" layoutX="532.0" layoutY="246.0" prefHeight="36.0" prefWidth="182.0" />
+            <Text layoutX="567.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Credit">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
    </children>

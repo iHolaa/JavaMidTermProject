@@ -27,22 +27,17 @@
                   <Font name="System Bold" size="11.0" />
                </font>
             </Button>
-            <Button layoutX="418.0" layoutY="507.0" mnemonicParsing="false" onAction="#AcceptRequest" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #289541;" text="Accpet" textFill="WHITE">
+            <Button layoutX="400.0" layoutY="507.0" mnemonicParsing="false" onAction="#AcceptRequest" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #289541;" text="Accpet" textFill="WHITE">
                <font>
-                  <Font size="13.0" />
+                  <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="267.0" layoutY="507.0" mnemonicParsing="false" onAction="#DeclineRequest" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #F3402B;" text="Decline" textFill="WHITE">
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Button>
-            <Label fx:id="label1" layoutX="231.0" layoutY="364.0" prefHeight="26.0" prefWidth="265.0" textFill="#ee5252">
+            <Label fx:id="label1" layoutX="231.0" layoutY="408.0" prefHeight="26.0" prefWidth="265.0" textFill="#ee5252">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="label2" layoutX="231.0" layoutY="390.0" prefHeight="26.0" prefWidth="265.0" textAlignment="CENTER" textFill="#7a30cf">
+            <Label fx:id="label2" layoutX="231.0" layoutY="443.0" prefHeight="26.0" prefWidth="265.0" textAlignment="CENTER" textFill="#7a30cf">
                <font>
                   <Font size="16.0" />
                </font>
@@ -53,11 +48,17 @@
                   <Font size="13.0" />
                </font>
             </Text>
-            <Button layoutX="79.0" layoutY="507.0" mnemonicParsing="false" onAction="#LoadUserRequest" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #1135A5;" text="Load User" textFill="WHITE">
+            <Button layoutX="167.0" layoutY="507.0" mnemonicParsing="false" onAction="#LoadUserRequest" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #1135A5;" text="Load User" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
+            <TextField fx:id="ReqCreditTextField" editable="false" layoutX="513.0" layoutY="220.0" prefHeight="36.0" prefWidth="155.0" />
+            <Text layoutX="545.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Credit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
          </children>
       </Pane>
       <TextField fx:id="ReqNameTextField" editable="false" layoutX="309.0" layoutY="182.0" prefHeight="36.0" prefWidth="164.0" />

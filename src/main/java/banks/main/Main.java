@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main extends Application {
+
     public static Scanner scanner;
     FileManeger fileManeger = new FileManeger();
     private static Stage stg;
