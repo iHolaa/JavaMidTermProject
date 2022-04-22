@@ -17,12 +17,12 @@
                   <Image url="@../../Photos/HeadBank.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="302.0" layoutY="222.0" mnemonicParsing="false" onAction="#HeadBankUserInformation" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #171A3C;" text="Users &amp; Information" textFill="WHITE">
+            <Button layoutX="301.0" layoutY="272.0" mnemonicParsing="false" onAction="#HeadBankUserInformation" prefHeight="57.0" prefWidth="196.0" style="-fx-background-color: #171A3C;" text="Users &amp; Information" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button layoutX="301.0" layoutY="284.0" mnemonicParsing="false" onAction="#UserRequestButton" prefHeight="48.0" prefWidth="196.0" style="-fx-background-color: #171A3C;" text="User Request" textFill="WHITE">
+            <Button layoutX="301.0" layoutY="199.0" mnemonicParsing="false" onAction="#UserRequestButton" prefHeight="57.0" prefWidth="196.0" style="-fx-background-color: #171A3C;" text="User Request" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
@@ -37,6 +37,11 @@
                   <Font size="20.0" />
                </font>
             </Text>
+            <Button layoutX="301.0" layoutY="346.0" mnemonicParsing="false" onAction="#DefinebillHeadBank" prefHeight="57.0" prefWidth="196.0" style="-fx-background-color: #171A3C;" text="Define bill" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

@@ -53,7 +53,7 @@ public class AddUser {
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\HeadBank\\Password.txt", UserPasswordTextField.getText().trim());
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\HeadBank\\Bank.txt","HeadBank");
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\HeadBank\\AccountCredit.txt",UserCreditTextField.getText());
-                SendLabel.setText(" Information Sended to HeadBank ");
+                SendLabel.setText(" Information Sent to HeadBank ");
             }
             //Bank1
             else if (Bank1CheckBox.isSelected() && UserNameTextField.getText().length() > 3 && UserLastnameTextField.getText() != null
@@ -65,7 +65,7 @@ public class AddUser {
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank1\\Password.txt", UserPasswordTextField.getText().trim());
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank1\\Bank.txt","Bank1");
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank1\\AccountCredit.txt",UserCreditTextField.getText());
-                SendLabel.setText(" Information Sended to HeadBank ");
+                SendLabel.setText(" Information Sent to HeadBank ");
             }
             //Bank2
             else if (Bank2CheckBox.isSelected() && UserNameTextField.getText().length() > 3 && UserLastnameTextField.getText() != null
@@ -77,7 +77,7 @@ public class AddUser {
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank2\\Password.txt", UserPasswordTextField.getText().trim());
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank2\\Bank.txt","Bank2");
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank2\\AccountCredit.txt",UserCreditTextField.getText());
-                SendLabel.setText(" Information Sended to HeadBank ");
+                SendLabel.setText(" Information Sent to HeadBank ");
             }
             //Bank3
             else if (Bank3CheckBox.isSelected() && UserNameTextField.getText().length() > 3 && UserLastnameTextField.getText() != null
@@ -89,7 +89,7 @@ public class AddUser {
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank3\\Password.txt", UserPasswordTextField.getText().trim());
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank3\\Bank.txt","Bank3");
                 fm.FileWriter("src\\main\\resources\\Files\\User\\UserRequest\\Bank3\\AccountCredit.txt",UserCreditTextField.getText());
-                SendLabel.setText(" Information Sended to HeadBank ");
+                SendLabel.setText(" Information Sent to HeadBank ");
             }
             else{
                 ErrorLabel.setText(" -- Wrong Input -- ");

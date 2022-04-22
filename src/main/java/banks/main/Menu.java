@@ -7,14 +7,7 @@ public class Menu {
 
 
 
-    public void addBankButton(){
-        try {
-            main.changeScene("AddBank.fxml");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
 
-    }
    public void addAdminButton(){
        try {
            main.changeScene("AddAdmin.fxml");
@@ -29,9 +22,16 @@ public class Menu {
            throw new RuntimeException(e);
        }
    }
-   public void MenuAdminPage(){
+   public void AdminPage(){
        try {
            main.changeScene("LoginAdmin.fxml");
+       } catch (IOException e) {
+           throw new RuntimeException(e);
+       }
+   }
+   public void PayBills(){
+       try {
+           main.changeScene("");
        } catch (IOException e) {
            throw new RuntimeException(e);
        }

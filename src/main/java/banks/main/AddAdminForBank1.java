@@ -18,9 +18,9 @@ Label label;
 
     public void AddAdminForBank1(){
         if(adminPassword.getText().length() > 3 && adminUsername.getText().length() > 3){
-            fm2.FileWriter("src\\main\\resources\\Files\\Bank1 Admin SignUp\\Username.txt",
+            fm2.FileWriter("src\\main\\resources\\Files\\Login Admin\\Bank1 Admin SignUp\\Username.txt",
                     adminUsername.getText().trim());
-            fm2.FileWriter("src\\main\\resources\\Files\\Bank1 Admin SignUp\\Password.txt",
+            fm2.FileWriter("src\\main\\resources\\Files\\Login Admin\\Bank1 Admin SignUp\\Password.txt",
                     adminPassword.getText().trim());
             label.setVisible(true);
             label.setText("  Bank1 Admin -->> Added Successfully.. ");

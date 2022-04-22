@@ -32,12 +32,12 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Label fx:id="label1" layoutX="231.0" layoutY="408.0" prefHeight="26.0" prefWidth="265.0" textFill="#ee5252">
+            <Label fx:id="label1" layoutX="231.0" layoutY="435.0" prefHeight="26.0" prefWidth="265.0" textFill="#ee5252">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Label fx:id="label2" layoutX="231.0" layoutY="443.0" prefHeight="26.0" prefWidth="265.0" textAlignment="CENTER" textFill="#7a30cf">
+            <Label fx:id="label2" layoutX="231.0" layoutY="461.0" prefHeight="26.0" prefWidth="265.0" textAlignment="CENTER" textFill="#7a30cf">
                <font>
                   <Font size="16.0" />
                </font>
@@ -57,6 +57,26 @@
             <Text layoutX="545.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Credit">
                <font>
                   <Font size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="transferCodeLabel" layoutX="221.0" layoutY="354.0" prefHeight="29.0" prefWidth="285.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="shabaLabel" layoutX="221.0" layoutY="388.0" prefHeight="36.0" prefWidth="285.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Text layoutX="98.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shaba Code : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="82.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer Code : ">
+               <font>
+                  <Font size="18.0" />
                </font>
             </Text>
          </children>

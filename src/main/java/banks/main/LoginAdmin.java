@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class LoginAdmin {
     Main main = new Main();
-    FileManeger2 fm = new FileManeger2();
+    FileManeger fm = new FileManeger();
     ArrayList<String> HeadBankUsr = new ArrayList<>();
     ArrayList<String> HeadBankPass = new ArrayList<>();
     //Bank1 ReadFile
@@ -40,17 +40,17 @@ public class LoginAdmin {
 
     public void LoginButton() throws IOException {
         //HeadBank
-        fm.FileReader("src\\main\\resources\\Files\\HeadBank Admin SignUp\\Username.txt", HeadBankUsr);
-        fm.FileReader("src\\main\\resources\\Files\\HeadBank Admin SignUp\\Password.txt", HeadBankPass);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\HeadBank Admin SignUp\\Username.txt", HeadBankUsr);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\HeadBank Admin SignUp\\Password.txt", HeadBankPass);
         //Bank1
-        fm.FileReader("src\\main\\resources\\Files\\Bank1 Admin SignUp\\Username.txt", Bank1Usr);
-        fm.FileReader("src\\main\\resources\\Files\\Bank1 Admin SignUp\\Password.txt", Bank1Pass);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\Bank1 Admin SignUp\\Username.txt", Bank1Usr);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\Bank1 Admin SignUp\\Password.txt", Bank1Pass);
         //Bank2
-        fm.FileReader("src\\main\\resources\\Files\\Bank2 Admin SignUp\\Username.txt", Bank2Usr);
-        fm.FileReader("src\\main\\resources\\Files\\Bank2 Admin SignUp\\Password.txt", Bank2Pass);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\Bank2 Admin SignUp\\Username.txt", Bank2Usr);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\Bank2 Admin SignUp\\Password.txt", Bank2Pass);
         //Bank3
-        fm.FileReader("src\\main\\resources\\Files\\Bank3 Admin SignUp\\Username.txt",Bank3Usr);
-        fm.FileReader("src\\main\\resources\\Files\\Bank3 Admin SignUp\\Password.txt", Bank3Pass);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\Bank3 Admin SignUp\\Username.txt",Bank3Usr);
+        fm.FileReader("src\\main\\resources\\Files\\Login Admin\\Bank3 Admin SignUp\\Password.txt", Bank3Pass);
 
         for (int i = 0; i < HeadBankUsr.size() ; i++) {
 
@@ -64,17 +64,30 @@ public class LoginAdmin {
             }
             else if (Bank1CheckBox.isSelected() && loginUsrTextField.getText().trim().equals(Bank1Usr.get(i)) &&
                     loginPassTextField.getText().trim().equals(Bank1Pass.get(i))) {
-
+                try{
+                    main.changeScene("Bank1.fxml");
+                }catch(Exception ex){
+                    ex.printStackTrace();
+            }
 
             }
             else if (Bank2CheckBox.isSelected() && loginUsrTextField.getText().trim().equals(Bank2Usr.get(i)) &&
                     loginPassTextField.getText().trim().equals(Bank2Pass.get(i))) {
-
-
+                try{
+                    main.changeScene("Bank2.fxml");
+                }catch(Exception ex){
+                    ex.printStackTrace();
                 }
+
+            }
 
             else if (Bank3CheckBox.isSelected() && loginUsrTextField.getText().trim().equals(Bank3Usr.get(i)) &&
                     loginPassTextField.getText().trim().equals(Bank3Pass.get(i))) {
+                try{
+                    main.changeScene("Bank3.fxml");
+                }catch(Exception ex){
+                    ex.printStackTrace();
+                }
 
             }
             else{
@@ -90,7 +103,6 @@ public class LoginAdmin {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
     }
      public void Change(){
          Bank1CheckBox.setSelected(false);

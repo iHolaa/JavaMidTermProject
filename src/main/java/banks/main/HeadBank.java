@@ -14,7 +14,13 @@ public class HeadBank {
     public void HeadBankUserInformation(){
 
     }
-
+    public void DefinebillHeadBank(){
+        try {
+            main.changeScene("DefineBillforHeadBank.fxml");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
     public void ReturnToMenu() {
         try {
             main.changeScene("Menu.fxml");

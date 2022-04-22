@@ -78,6 +78,7 @@ public class AddBank {
           }
         if(temp1.equals("yes") && temp2.equals("yes") && temp3.equals("yes")){
             MenuButton.setVisible(true);
+            bankBudgetTextField.setEditable(false);
         }
 
     }
