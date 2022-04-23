@@ -31,7 +31,7 @@ public class Menu {
    }
    public void PayBills(){
        try {
-           main.changeScene("");
+           main.changeScene("PayBills.fxml");
        } catch (IOException e) {
            throw new RuntimeException(e);
        }

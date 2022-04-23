@@ -9,7 +9,7 @@ public class FileManeger2 {
 
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(filePath));
-            writer.write(data + "\n");
+            writer.write(data);
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();
