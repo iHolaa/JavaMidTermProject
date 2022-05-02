@@ -61,7 +61,7 @@ public class DefineBillforBank2 {
     }
     public void ReturnToBank2(){
         try {
-            main.changeScene("Bank3.fxml");
+            main.changeScene("Bank2.fxml");
         } catch (Exception ex) {
             ex.printStackTrace();
         }

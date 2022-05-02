@@ -12,7 +12,11 @@ public class HeadBank {
         }
     }
     public void HeadBankUserInformation(){
-
+        try {
+            main.changeScene("HeadBankUserInformation.fxml");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
     public void DefinebillHeadBank(){
         try {

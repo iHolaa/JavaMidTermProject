@@ -190,7 +190,7 @@ public class PayBills {
                     errorLabel.setText(" Your Credit is Not Enough !! ");
                 }
             }catch (Exception ex){
-                System.out.println(" Return to Menu ");
+                successLabel.setText(" Return to Menu ");
             }
 
         }
@@ -210,7 +210,7 @@ public class PayBills {
                     errorLabel.setText(" Your Credit is Not Enough !! ");
                 }
             }catch (Exception ex){
-                System.out.println("Error");
+                successLabel.setText(" Return to Menu ");
             }
 
         }
@@ -231,7 +231,7 @@ public class PayBills {
                     errorLabel.setText(" Your Credit is Not Enough !! ");
                 }
             }catch (Exception ex){
-                System.out.println("Error");
+                successLabel.setText(" Return to Menu ");
             }
 
         }
@@ -252,7 +252,7 @@ public class PayBills {
                     errorLabel.setText(" Your Credit is Not Enough !! ");
                 }
             }catch (Exception ex){
-                System.out.println("Error");
+                successLabel.setText(" Return to Menu ");
             }
         }
         else {

@@ -6,8 +6,11 @@ public class Bank2 {
 
 
     public void Bank2UserInformation(){
-
-
+        try {
+            main.changeScene("Bank2UserInformation.fxml");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     public void DefinebillBank2(){
@@ -16,7 +19,6 @@ public class Bank2 {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
     }
 
     public void ReturnToMenu(){

@@ -5,8 +5,11 @@ public class Bank1 {
 
 
     public void Bank1UserInformation(){
-
-
+        try {
+            main.changeScene("Bank1UserInformation.fxml");
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 
     public void DefinebillBank1(){
