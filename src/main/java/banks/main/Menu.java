@@ -36,4 +36,18 @@ public class Menu {
            throw new RuntimeException(e);
        }
    }
+   public void Withdrawal(){
+       try {
+           main.changeScene("PayBills.fxml");
+       } catch (IOException e) {
+           throw new RuntimeException(e);
+       }
+   }
+   public void MoneyTransfer(){
+       try {
+           main.changeScene("MoneyTransfer.fxml");
+       } catch (IOException e) {
+           throw new RuntimeException(e);
+       }
+   }
 }

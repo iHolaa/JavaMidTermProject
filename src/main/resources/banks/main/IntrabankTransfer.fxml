@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.IntrabankTransfer">
+   <children>
+      <Pane layoutY="-3.0" prefHeight="626.0" prefWidth="820.0" style="-fx-background-color: black;">
+         <children>
+            <TextField fx:id="senderTextField" layoutX="128.0" layoutY="177.0" prefHeight="44.0" prefWidth="214.0" promptText="transfer code">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="670.0" layoutY="546.0" mnemonicParsing="false" onAction="#ReturnToMenu" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #F6E925;" text="Return to Menu">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkButton" layoutX="115.0" layoutY="384.0" mnemonicParsing="false" onAction="#CheckTransfer" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #5EF3A8;" text="Check">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="HeadBankCheckBox" layoutX="152.0" layoutY="95.0" mnemonicParsing="false" onAction="#Change" selected="true" text="HeadBank" textFill="#898fff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Bank1CheckBox" layoutX="319.0" layoutY="95.0" mnemonicParsing="false" onAction="#Change1" text="Bank1" textFill="#898fff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Bank2CheckBox" layoutX="455.0" layoutY="95.0" mnemonicParsing="false" onAction="#Change2" text="Bank2" textFill="#898fff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Bank3CheckBox" layoutX="588.0" layoutY="95.0" mnemonicParsing="false" onAction="#Change3" text="Bank3" textFill="#898fff">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <Text fill="WHITE" layoutX="26.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intra Transfer" wrappingWidth="140.99999856948853">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="53.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Label fx:id="errorLabel" layoutX="66.0" layoutY="336.0" prefHeight="30.0" prefWidth="338.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amountTextField" layoutX="235.0" layoutY="280.0" prefHeight="44.0" prefWidth="214.0" promptText="amount" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="TransferButton" layoutX="303.0" layoutY="521.0" mnemonicParsing="false" onAction="#Transfer" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #F6BF50;" text="Transfer" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="successLabel" layoutX="199.0" layoutY="482.0" prefHeight="30.0" prefWidth="372.0" textFill="#15ff00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="receiverTextField" layoutX="526.0" layoutY="177.0" prefHeight="44.0" prefWidth="221.0" promptText="transfer code">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Text fill="WHITE" layoutX="433.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receiver">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="transferAmountText" fill="WHITE" layoutX="66.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer Amount" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="personText" fill="#4b863e" layoutX="163.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="358.9999953508377">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

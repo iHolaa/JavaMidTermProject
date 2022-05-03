@@ -76,9 +76,9 @@ public class PayBills {
                 for ( k = 0; k < Bank1ID.size(); k++) {
                     if (billIDTextField.getText().equals(Bank1ID.get(k))) {
                         try {
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\Name.txt",name);
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\LastName.txt",lastname);
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\BillAmount.txt",billAmount);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank1\\Name.txt",name);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank1\\LastName.txt",lastname);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank1\\BillAmount.txt",billAmount);
                             Pay.setVisible(true);
                             nameText.setVisible(true);
                             lastnameText.setVisible(true);
@@ -108,9 +108,9 @@ public class PayBills {
                 for ( j = 0; j < Bank2ID.size(); j++) {
                     if (billIDTextField.getText().equals(Bank2ID.get(j))) {
                         try {
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\Name.txt",name);
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\LastName.txt",lastname);
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\BillAmount.txt",billAmount);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank2\\Name.txt",name);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank2\\LastName.txt",lastname);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank2\\BillAmount.txt",billAmount);
                             Pay.setVisible(true);
                             nameText.setVisible(true);
                             lastnameText.setVisible(true);
@@ -140,9 +140,9 @@ public class PayBills {
                 for (h = 0; h < Bank3ID.size(); h++) {
                     if (billIDTextField.getText().equals(Bank3ID.get(h))) {
                         try {
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\Name.txt",name);
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\LastName.txt",lastname);
-                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\HeadBank\\BillAmount.txt",billAmount);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank3\\Name.txt",name);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank3\\LastName.txt",lastname);
+                            fm.FileReader("src\\main\\resources\\Files\\DefineBill\\Bank3\\BillAmount.txt",billAmount);
                             Pay.setVisible(true);
                             nameText.setVisible(true);
                             lastnameText.setVisible(true);

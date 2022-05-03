@@ -13,12 +13,8 @@ public class UserInformation {
         this.money = money;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-    public String getLastName() {
-        return lastName;
-    }
+    public String getFirstName() { return firstName;}
+    public String getLastName() { return lastName;}
     public String getAge() {
         return age;
     }
