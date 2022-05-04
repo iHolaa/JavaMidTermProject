@@ -27,17 +27,17 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="267.0" layoutY="426.0" mnemonicParsing="false" onAction="#PayBills" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #B41717;" text="Pay the Bills" textFill="WHITE">
+            <Button layoutX="267.0" layoutY="426.0" mnemonicParsing="false" onAction="#PayBills" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #E10000;" text="Pay the Bills" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="267.0" layoutY="300.0" mnemonicParsing="false" onAction="#Withdrawal" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #B41717;" text="Withdrawal" textFill="WHITE">
+            <Button layoutX="267.0" layoutY="300.0" mnemonicParsing="false" onAction="#Withdrawal" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #E10000;" text="Withdrawal" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="267.0" layoutY="239.0" mnemonicParsing="false" onAction="#AdminPage" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #B41717;" text="Admin Page" textFill="WHITE">
+            <Button layoutX="267.0" layoutY="239.0" mnemonicParsing="false" onAction="#AdminPage" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #E10000;" text="Admin Page" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -47,12 +47,12 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button layoutX="267.0" layoutY="364.0" mnemonicParsing="false" onAction="#MoneyTransfer" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #B41717;" text="Money Transfer" textFill="WHITE">
+            <Button layoutX="267.0" layoutY="364.0" mnemonicParsing="false" onAction="#MoneyTransfer" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #E10000;" text="Money Transfer" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="closeButton" layoutX="267.0" layoutY="492.0" mnemonicParsing="false" onAction="#Exit" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #B41717;" text="Exit" textFill="WHITE">
+            <Button fx:id="closeButton" layoutX="267.0" layoutY="492.0" mnemonicParsing="false" onAction="#Exit" prefHeight="48.0" prefWidth="266.0" style="-fx-background-color: #E10000;" text="Exit" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
