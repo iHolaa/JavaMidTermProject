@@ -129,6 +129,9 @@ public class RequestInHeadBank {
                 fm.FileWriter("src\\main\\resources\\Files\\User\\AddUser\\Bank1\\ShabaCode.txt", String.valueOf(shabacode));
                 shabaLabel.setText(String.valueOf(shabacode));
             }
+            else{
+                fm.FileWriter("src\\main\\resources\\Files\\User\\AddUser\\Bank1\\ShabaCode.txt","no");
+            }
 
         }
         else if(ReqBankNameTextField.getText().equals("Bank2")){
@@ -151,6 +154,9 @@ public class RequestInHeadBank {
                 fm.FileWriter("src\\main\\resources\\Files\\User\\AddUser\\Bank2\\ShabaCode.txt", String.valueOf(shabacode));
                 shabaLabel.setText(String.valueOf(shabacode));
             }
+            else{
+                fm.FileWriter("src\\main\\resources\\Files\\User\\AddUser\\Bank2\\ShabaCode.txt","no");
+            }
         }
         else if(ReqBankNameTextField.getText().equals("Bank3")){
             fm.FileWriter("src\\main\\resources\\Files\\User\\AddUser\\Bank3\\Name.txt",ReqNameTextField.getText().trim());
@@ -172,7 +178,9 @@ public class RequestInHeadBank {
                 fm.FileWriter("src\\main\\resources\\Files\\User\\AddUser\\Bank3\\ShabaCode.txt", String.valueOf(shabacode));
                 shabaLabel.setText(String.valueOf(shabacode));
             }
-
+            else{
+                fm.FileWriter("src\\main\\resources\\Files\\User\\AddUser\\Bank3\\ShabaCode.txt","no");
+            }
         }
     }
     public void ReturnToMenu(){

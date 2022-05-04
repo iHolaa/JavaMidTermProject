@@ -1,11 +1,16 @@
 package banks.main;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
 import java.io.IOException;
 
 public class Menu {
     Main main = new Main();
-
-
+    @FXML
+    Button closeButton;
 
 
    public void addAdminButton(){
@@ -38,7 +43,7 @@ public class Menu {
    }
    public void Withdrawal(){
        try {
-           main.changeScene("PayBills.fxml");
+           main.changeScene("Withdrawal.fxml");
        } catch (IOException e) {
            throw new RuntimeException(e);
        }
@@ -49,5 +54,9 @@ public class Menu {
        } catch (IOException e) {
            throw new RuntimeException(e);
        }
+   }
+   public void Exit() {
+    Stage stage = (Stage) closeButton.getScene().getWindow();
+    stage.close();
    }
 }

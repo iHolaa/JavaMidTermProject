@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.Withdrawal">
+   <children>
+      <Pane layoutX="-7.0" layoutY="-9.0" prefHeight="635.0" prefWidth="827.0" style="-fx-background-color: #11110F;">
+         <children>
+            <TextField fx:id="nameTextField" layoutX="329.0" layoutY="156.0" prefHeight="39.0" prefWidth="196.0" promptText="name">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Button layoutX="686.0" layoutY="555.0" mnemonicParsing="false" onAction="#ReturnToMenu" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #F6E925;" text="Return to Menu">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkButton" layoutX="137.0" layoutY="521.0" mnemonicParsing="false" onAction="#Check" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #36FCF0;" text="Check">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="619.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the User Bank">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="HeadBankCheckBox" layoutX="641.0" layoutY="175.0" mnemonicParsing="false" onAction="#Change" selected="true" text="HeadBank" textFill="#f700d1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Bank1CheckBox" layoutX="641.0" layoutY="209.0" mnemonicParsing="false" onAction="#Change1" text="Bank1" textFill="#f700d1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Bank2CheckBox" layoutX="641.0" layoutY="242.0" mnemonicParsing="false" onAction="#Change2" text="Bank2" textFill="#f700d6">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="Bank3CheckBox" layoutX="641.0" layoutY="277.0" mnemonicParsing="false" onAction="#Change3" text="Bank3" textFill="#f700f1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </CheckBox>
+            <Text fill="WHITE" layoutX="51.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATM">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="244.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Label fx:id="errorLabel" layoutX="182.0" layoutY="423.0" prefHeight="30.0" prefWidth="372.0" textFill="RED">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="amountTextField" layoutX="329.0" layoutY="327.0" prefHeight="39.0" prefWidth="196.0" promptText="amount" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Text fx:id="AmountText" fill="WHITE" layoutX="239.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount :" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="takeButton" layoutX="318.0" layoutY="521.0" mnemonicParsing="false" onAction="#Take" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #F6BF50;" text="Take" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="successLabel" layoutX="276.0" layoutY="466.0" prefHeight="30.0" prefWidth="275.0" textFill="#15ff00">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="214.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <TextField fx:id="passTextField" layoutX="329.0" layoutY="216.0" prefHeight="39.0" prefWidth="196.0" promptText="password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="moneyTextField" layoutX="329.0" layoutY="271.0" prefHeight="39.0" prefWidth="196.0" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <Text fx:id="userMoney" fill="WHITE" layoutX="198.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Money :" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="fiftyTextField" editable="false" layoutX="650.0" layoutY="356.0" prefHeight="25.0" prefWidth="60.0" visible="false" />
+            <TextField fx:id="tenTextField" layoutX="650.0" layoutY="387.0" prefHeight="30.0" prefWidth="60.0" visible="false" />
+            <TextField fx:id="fiveTextField" editable="false" layoutX="650.0" layoutY="423.0" prefHeight="30.0" prefWidth="60.0" visible="false" />
+            <TextField fx:id="twoTextField" editable="false" layoutX="650.0" layoutY="458.0" prefHeight="27.0" prefWidth="60.0" visible="false" />
+            <TextField fx:id="oneTextField" editable="false" layoutX="650.0" layoutY="489.0" prefHeight="23.0" prefWidth="60.0" visible="false" />
+            <Text fx:id="fiftyText" fill="WHITE" layoutX="570.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50 toman :" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="tenText" fill="WHITE" layoutX="570.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 toman :" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="fiveText" fill="WHITE" layoutX="578.0" layoutY="444.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 toman :" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="twoText" fill="WHITE" layoutX="576.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 2 toman :" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="oneText" fill="WHITE" layoutX="578.0" layoutY="507.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 toman :" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

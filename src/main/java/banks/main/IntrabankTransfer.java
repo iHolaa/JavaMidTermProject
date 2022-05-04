@@ -25,30 +25,33 @@ public class IntrabankTransfer {
     CheckBox HeadBankCheckBox ,Bank1CheckBox , Bank2CheckBox ,Bank3CheckBox ;
     @FXML
     Button TransferButton , checkButton;
+
+    //For Headbank
     ArrayList<String> Code  = new ArrayList<>();
     ArrayList<String> AcountCredit  = new ArrayList<>();
     ArrayList<String> name  = new ArrayList<>();
     ArrayList<String> lastname = new ArrayList<>();
+    int i,j;
+
+    //For Bank1
     ArrayList<String> Code1   = new ArrayList<>();
     ArrayList<String> AcountCredit1   = new ArrayList<>();
     ArrayList<String> name1  = new ArrayList<>();
     ArrayList<String> lastname1 = new ArrayList<>();
+    int k,h;
+
+    //For Bank2
     ArrayList<String> Code2 = new ArrayList<>();
     ArrayList<String> AcountCredit2 = new ArrayList<>();
     ArrayList<String> name2  = new ArrayList<>();
     ArrayList<String> lastname2 = new ArrayList<>();
+    int x,y;
+
+    //For Bank3
     ArrayList<String> Code3 = new ArrayList<>();
     ArrayList<String> AcountCredit3 = new ArrayList<>();
     ArrayList<String> name3  = new ArrayList<>();
     ArrayList<String> lastname3 = new ArrayList<>();
-
-    //for HeadBank
-    int i,j;
-    //for Bank1
-    int k,h;
-    //for Bank2
-    int x,y;
-    //for Bank3
     int a,b;
 
     public void CheckTransfer(){
@@ -62,7 +65,7 @@ public class IntrabankTransfer {
             for ( i = 0; i < Code.size() ; i++) {
                 if (senderTextField.getText().equals(Code.get(i))){
                     for ( j = 0; j < Code.size() ; j++) {
-                        if (receiverTextField.getText().equals( Code.get(j))){
+                        if (receiverTextField.getText().equals( Code.get(j)) && i!=j){
                             transferAmountText.setVisible(true);
                             amountTextField.setVisible(true);
                             TransferButton.setVisible(true);
@@ -97,7 +100,7 @@ public class IntrabankTransfer {
             for ( k = 0; k < Code1.size() ; k++) {
                 if (senderTextField.getText().equals(Code1.get(k))){
                     for ( h = 0; h < Code1.size() ; h++) {
-                        if (receiverTextField.getText().equals( Code1.get(h))){
+                        if (receiverTextField.getText().equals( Code1.get(h)) && k!=h ){
                             transferAmountText.setVisible(true);
                             amountTextField.setVisible(true);
                             TransferButton.setVisible(true);
@@ -132,7 +135,7 @@ public class IntrabankTransfer {
             for ( x = 0; x < Code2.size() ; x++) {
                 if (senderTextField.getText().equals(Code2.get(x))){
                     for ( y = 0; y < Code2.size() ; y++) {
-                        if (receiverTextField.getText().equals( Code2.get(y))){
+                        if (receiverTextField.getText().equals( Code2.get(y)) && x!=y ){
                             transferAmountText.setVisible(true);
                             amountTextField.setVisible(true);
                             TransferButton.setVisible(true);
@@ -167,7 +170,7 @@ public class IntrabankTransfer {
             for ( a = 0; a < Code3.size() ; a++) {
                 if (senderTextField.getText().equals(Code3.get(a))){
                     for ( b = 0; b < Code3.size() ; b++) {
-                        if (receiverTextField.getText().equals( Code3.get(b))){
+                        if (receiverTextField.getText().equals( Code3.get(b)) && a!=b ){
                             transferAmountText.setVisible(true);
                             amountTextField.setVisible(true);
                             TransferButton.setVisible(true);

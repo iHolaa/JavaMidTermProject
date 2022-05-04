@@ -1,11 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banks.main.ShabaTransfer">
    <children>
-      <Pane layoutX="-6.0" layoutY="-8.0" prefHeight="600.0" prefWidth="800.0" />
+      <Pane layoutX="-3.0" layoutY="-4.0" prefHeight="604.0" prefWidth="804.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="49.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sender ID :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="senderTextField" layoutX="131.0" layoutY="127.0" prefHeight="39.0" prefWidth="182.0" promptText="Shaba ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="receiverTextField" layoutX="502.0" layoutY="126.0" prefHeight="39.0" prefWidth="182.0" promptText="Shaba ID">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Text fill="WHITE" layoutX="413.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receiver ID :">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="checkButton" layoutX="66.0" layoutY="324.0" mnemonicParsing="false" onAction="#CheckTransfer" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #1F7546;" text="Check" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <TextField fx:id="amountTextField" layoutX="258.0" layoutY="225.0" prefHeight="39.0" prefWidth="182.0" promptText="amount" visible="false">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Text fx:id="transferAmountText" fill="WHITE" layoutX="131.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer Amount :" visible="false">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Label fx:id="errorLabel" layoutX="53.0" layoutY="279.0" prefHeight="30.0" prefWidth="370.0" textFill="RED">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="TransferButton" layoutX="302.0" layoutY="504.0" mnemonicParsing="false" onAction="#Transfer" prefHeight="44.0" prefWidth="167.0" style="-fx-background-color: #F6BF50;" text="Transfer" textFill="#1b0f39" visible="false">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="successLabel" layoutX="214.0" layoutY="460.0" prefHeight="30.0" prefWidth="372.0" textFill="#15ff00">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Text fx:id="personText" fill="#4b863e" layoutX="143.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="358.9999953508377">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="652.0" layoutY="529.0" mnemonicParsing="false" onAction="#ReturnToMenu" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #F6E925;" text="Return to Menu">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="36.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shaba Transfer" wrappingWidth="140.99999856948853">
+         <font>
+            <Font name="System Italic" size="21.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
