@@ -239,35 +239,7 @@ public class Withdrawal {
                         for (int j2 = 0; j2 <= (amount % 100) / 5; j2++){
                             for (int j3 = 0; j3 <= (amount % 500 ) / 2; j3++){
                                 for (int j4 = 0; j4 <= (amount % 1000) / 1; j4++) {
-                                    if (j0 * 50 == amount) {
-                                        fiftyTextField.setText(String.valueOf(j0));
-                                        tenTextField.setText("0");
-                                        fiveTextField.setText("0");
-                                        twoTextField.setText("0");
-                                        oneTextField.setText("0");
-                                        break;
-                                    } else if ((j0 * 50 + j1 * 10) == amount ) {
-                                        fiftyTextField.setText(String.valueOf(j0));
-                                        tenTextField.setText(String.valueOf(j1));
-                                        fiveTextField.setText("0");
-                                        twoTextField.setText("0");
-                                        oneTextField.setText("0");
-                                        break;
-                                    } else if ((j0 * 50 + j1 * 10 + j2 * 5) == amount) {
-                                        fiftyTextField.setText(String.valueOf(j0));
-                                        tenTextField.setText(String.valueOf(j1));
-                                        fiveTextField.setText(String.valueOf(j2));
-                                        twoTextField.setText("0");
-                                        oneTextField.setText("0");
-                                        break;
-                                    } else if ((j0 * 50 + j1 * 10 + j2 * 5 + j3 * 2) == amount) {
-                                        fiftyTextField.setText(String.valueOf(j0));
-                                        tenTextField.setText(String.valueOf(j1));
-                                        fiveTextField.setText(String.valueOf(j2));
-                                        twoTextField.setText(String.valueOf(j3));
-                                        oneTextField.setText("0");
-                                        break;
-                                    } else if ((j0 * 50 + j1 * 10 + j2 * 5 + j3 * 2 + j4 * 1) == amount) {
+                                    if ((j0 * 50 + j1 * 10 + j2 * 5 + j3 * 2 + j4 * 1) == amount) {
                                         fiftyTextField.setText(String.valueOf(j0));
                                         tenTextField.setText(String.valueOf(j1));
                                         fiveTextField.setText(String.valueOf(j2));
